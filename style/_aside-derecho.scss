@@ -1,0 +1,63 @@
+@media screen and (max-width: 1020px) {
+    .col--der{
+    display: none;
+    }
+    ul{
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width: 1022px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .col--der{
+        div{
+            margin-bottom: 15px;
+        }
+        .card-body{
+            padding: 0px;
+        }
+        p{
+            font-size: 14px;
+            color: gray;
+            span{
+                background-color: yellow;
+                color: red;
+            }
+            
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        ul{
+            width: 100%;
+        }
+        li{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+            border: 1px opacity($color: gray) solid ;
+
+            p{
+                display: block;
+            }
+        }
+        button{
+            margin: 5px 0px 5px 0px;
+        }
+    
+
+    }
+    
+    
+}
+
+
+
+
