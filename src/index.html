@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md d-flex justify-content-between">
+      <nav class="navbar navbar-expand-md d-flex justify-content-between ">
         <div id="navegacion1" class="d-flex justify-content-between">
           <button
             class="d-block d-md-none"
@@ -32,20 +32,26 @@
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
               alt="logo"
           /></a>
-          <input class="d-none d-md-block" type="text" />
+          <div class="input-wrapper d-none d-sm-none d-md-block">
+            <input type="search" class="input" placeholder="Search">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
         </div>
         <div id="navegacion2" class="d-flex">
           <a href="#" class="d-sm-blok d-md-none"> <div id="search"></div></a>
-          <button class="d-none d-md-block">create Post</button>
+          <button type="button" class="d-none d-md-block btn btn-outline-primary  " id="post">Create Post</button>
           <a href="#"><div id="bell"></div></a>
           <a id="perfil" href="#"> <div id="imagen"></div></a>
         </div>
       </nav>
 
-      <!--
-        <div
-
-      <div
+      
+  
+      
+           <div
 
         class="offcanvas offcanvas-start"
         tabindex="-1"
@@ -71,7 +77,7 @@
           <li><a href="#">📹 Vídeos</a></li>
           <li><a href="#">🏷️ Etiquetas</a></li>
           <li><a href="#">💡 Preguntas más frecuentes</a></li>
-          <li><a href="#">🛍️Tienda Forem</a></li>
+          <li><a href="#">🛍️ Tienda Forem</a></li>
           <li><a href="#">♥️ Patrocinadores</a></li>
           <li><a href="#">🏳️‍🌈 Sobre</a></li>
           <li><a href="#">🎺 Contacto</a></li>
@@ -88,8 +94,8 @@
           <li><a href="#">😎 Política de uso</a></li>
           <li><a href="#">👀 Términos de uso</a></li>
           <div
-            class="canvas-footer d-flex"
-            style="height: 30px; width: 30px; background-color: black"
+            class="ftr d-flex justify-content-around align-items-center"
+            
           >
             <div class="twitter"></div>
             <div class="facebook"></div>
@@ -99,14 +105,17 @@
           </div>
         </div>
       </div>
+      
+   
 
-      -->
+      
     </header>
 
     <main class="px-5 py-3 w-100">
-      <aside>
+      
+      <aside >
         <div class="text-center w-100 d-none d-md-block">
-          <div class="row">
+          <div class="row d-flex">
             <div class="col-md-3">
               <div>
                 <ul class="my-3">
