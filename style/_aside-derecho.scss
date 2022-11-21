@@ -11,6 +11,9 @@
     *{
         margin: 0;
         padding: 0;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+
+
     }
     .col--der{
         div{
@@ -19,19 +22,16 @@
         .card-body{
             padding: 0px;
         }
-        p{
-            font-size: 14px;
-            color: gray;
-            span{
-                background-color: yellow;
-                color: red;
-            }
-            
-        }
+        
         a{
             text-decoration: none;
             font-weight: bold;
             color: black;
+        }
+        h5{
+            font: 20px;
+            color: #404040;
+            font-weight: bold;
         }
         ul{
             width: 100%;
@@ -43,11 +43,21 @@
             justify-content: flex-start;
             list-style: none;
             border: 1px double transparent;
+            color: #404040;
 
 
             p{
                 display: block;
             }
+        }
+        p{
+            font-size: 14px;
+            color: gray;
+            span{
+                background-color: yellow;
+                color: red;
+            }
+            
         }
         button{
             margin: 5px 0px 5px 0px;

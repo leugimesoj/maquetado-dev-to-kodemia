@@ -10,6 +10,7 @@
   * {
     margin: 0;
     padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   .col--der div {
     margin-bottom: 15px;
@@ -17,18 +18,15 @@
   .col--der .card-body {
     padding: 0px;
   }
-  .col--der p {
-    font-size: 14px;
-    color: gray;
-  }
-  .col--der p span {
-    background-color: yellow;
-    color: red;
-  }
   .col--der a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+  }
+  .col--der h5 {
+    font: 20px;
+    color: #404040;
+    font-weight: bold;
   }
   .col--der ul {
     width: 100%;
@@ -39,12 +37,42 @@
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
-    border: 1px 1 solid;
+    border: 1px double transparent;
+    color: #404040;
   }
   .col--der li p {
     display: block;
   }
+  .col--der p {
+    font-size: 14px;
+    color: gray;
+  }
+  .col--der p span {
+    background-color: yellow;
+    color: red;
+  }
   .col--der button {
     margin: 5px 0px 5px 0px;
   }
+}
+footer .container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer__img {
+  display: flex;
+  justify-content: center;
+}
+footer .container .footer__img img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */
