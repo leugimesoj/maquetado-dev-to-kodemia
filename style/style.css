@@ -180,9 +180,6 @@ main {
 main .main__asideDer--iconosredes {
   color: #404040;
 }
-main .main__asidei--width {
-  width: 18rem;
-}
 main .main__asided--width {
   width: 22rem;
 }
@@ -287,10 +284,11 @@ aside .asideizq__tags {
     display: none;
   }
 }
-@media screen and (min-width: 1022px) {
+@media screen and (min-width: 1021px) {
   * {
     margin: 0;
     padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   .col--der div {
     margin-bottom: 15px;
@@ -298,18 +296,15 @@ aside .asideizq__tags {
   .col--der .card-body {
     padding: 0px;
   }
-  .col--der p {
-    font-size: 14px;
-    color: gray;
-  }
-  .col--der p span {
-    background-color: yellow;
-    color: red;
-  }
   .col--der a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+  }
+  .col--der h5 {
+    font: 20px;
+    color: #404040;
+    font-weight: bold;
   }
   .col--der ul {
     width: 100%;
@@ -320,10 +315,19 @@ aside .asideizq__tags {
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
-    border: 1px 1 solid;
+    border: 1px double transparent;
+    color: #404040;
   }
   .col--der li p {
     display: block;
+  }
+  .col--der p {
+    font-size: 14px;
+    color: gray;
+  }
+  .col--der p span {
+    background-color: yellow;
+    color: red;
   }
   .col--der button {
     margin: 5px 0px 5px 0px;
