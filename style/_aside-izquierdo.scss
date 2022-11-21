@@ -5,4 +5,124 @@ main{
     .main__asideDer--iconosredes{
         color: #404040;
     }
+    .main__asidei--width{
+        width: 18rem;
+    }
+    .main__asided--width{
+        width: 22rem;
+    }
+    section{
+        .active{
+            background-color: #f5f5f5 !important;
+            color: #000 !important;
+            font-weight: bold !important;
+        }
+        .section__botton--group{
+            background-color: transparent;
+            color: #575757;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+        .section__card--imgUsuario{
+            width: 5%;
+            margin-right: .5rem;
+            img{
+                width: 100%;
+                border: 1px solid #575757;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .section__card--textUsuario{
+
+            a{
+                color: #4d4d4d;
+                font-weight: 500;
+                font-size: .9rem;
+                text-decoration: none;
+            }
+            p{
+                font-size: .7rem;
+                color: #5f5f5f;
+                margin: 0;
+            }
+        }
+        .section__card--textTitulo{ 
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        .section__card--textSubtitulo{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .section__card--textTags{
+            margin-left: 3rem;
+            a{
+                text-decoration: none;
+                color: #4d4d4d;
+                margin-right: 1rem;
+                font-size: .9rem;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+
+        .section__card--detalles{
+            margin-left: 3rem;
+            a{
+                text-decoration: none;
+                color: #4d4d4d;
+                margin-right: 1rem;
+                font-size: .9rem;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+        .section__card--detallesEntrada{
+            p{
+                margin: 0 1rem 0 0;
+                font-size: .9rem;
+            }
+            img{
+                margin-right: 1rem;
+            }
+        }
+    }
+        
+}
+
+
+@media screen and(max-width:576px) {
+    aside{
+        .card__aside--1,
+        .card__aside--2,
+        .asideizq__tags{
+            display: none;
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+
+        .section__center{
+            width: 31rem;
+        }
+
+        aside{
+            .main__asidei--width{
+                width: 18rem;
+                background-color: crimson !important;
+            }
+
+            
+        }
 }

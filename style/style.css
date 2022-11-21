@@ -91,7 +91,108 @@ main {
 main .main__asideDer--iconosredes {
   color: #404040;
 }
+main .main__asidei--width {
+  width: 18rem;
+}
+main .main__asided--width {
+  width: 22rem;
+}
+main section .active {
+  background-color: #f5f5f5 !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+main section .section__botton--group {
+  background-color: transparent;
+  color: #575757;
+  border: none;
+  font-size: 1.1rem;
+}
+main section .section__card--imgUsuario {
+  width: 5%;
+  margin-right: 0.5rem;
+}
+main section .section__card--imgUsuario img {
+  width: 100%;
+  border: 1px solid #575757;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .section__card--textUsuario a {
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+main section .section__card--textUsuario p {
+  font-size: 0.7rem;
+  color: #5f5f5f;
+  margin: 0;
+}
+main section .section__card--textTitulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+main section .section__card--textSubtitulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main section .section__card--textTags {
+  margin-left: 3rem;
+}
+main section .section__card--textTags a {
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+main section .section__card--textTags a:hover {
+  color: #000;
+}
+main section .section__card--detalles {
+  margin-left: 3rem;
+}
+main section .section__card--detalles a {
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+main section .section__card--detalles a:hover {
+  color: #000;
+}
+main section .section__card--detallesEntrada p {
+  margin: 0 1rem 0 0;
+  font-size: 0.9rem;
+}
+main section .section__card--detallesEntrada img {
+  margin-right: 1rem;
+}
 
+@media screen and (max-width: 576px) {
+  aside .card__aside--1,
+aside .card__aside--2,
+aside .asideizq__tags {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__center {
+    width: 31rem;
+  }
+  aside .main__asidei--width {
+    width: 18rem;
+    background-color: crimson !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  main section {
+    padding: 0 !important;
+  }
+}
 @media screen and (max-width: 1020px) {
   .col--der {
     display: none;
