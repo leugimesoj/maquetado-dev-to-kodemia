@@ -54,10 +54,16 @@ header {
     width: 30px;
     height: 30px;
   }
+  .offcanvas.offcanvas-start {
+    width: 76%;
+  }
+  .offcanvas.offcanvas-start h2 {
+    font-size: 1.125rem;
+  }
   .offcanvas .offcanvas-body li {
     display: flex;
     align-items: center;
-    width: 10rempx;
+    width: 100%;
     height: 5%;
     list-style: none;
   }
@@ -66,23 +72,106 @@ header {
     height: 80%;
     text-decoration: none;
   }
-  .offcanvas .offcanvas-body .canvas-footer {
-    background-color: black;
+  .offcanvas .offcanvas-body .ftr {
+    width: 80%;
+    height: 5vh;
   }
-  .offcanvas .offcanvas-body .canvas-footer .twitter {
+  .offcanvas .offcanvas-body .ftr .twitter {
     background-image: url("/images/twitter.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
   }
-  .offcanvas .offcanvas-body .canvas-footer .facebook {
+  .offcanvas .offcanvas-body .ftr .facebook {
     background-image: url("/images/facebook.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
   }
-  .offcanvas .offcanvas-body .canvas-footer .github {
+  .offcanvas .offcanvas-body .ftr .github {
     background-image: url(/images/github.svg);
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
   }
-  .offcanvas .offcanvas-body .canvas-footer .instagram {
+  .offcanvas .offcanvas-body .ftr .instagram {
     background-image: url("/images/instagram.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
   }
-  .offcanvas .offcanvas-body .canvas-footer .twitch {
+  .offcanvas .offcanvas-body .ftr .twitch {
     background-image: url("/images/twitch.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 810px) {
+  body header nav {
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+  }
+  body header nav #navegacion1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  body header nav #navegacion1 a {
+    margin-left: 10px;
+  }
+  body header nav #navegacion1 a img {
+    width: 3.6rem;
+    height: 2.7rem;
+  }
+  body header nav #navegacion1 .input-wrapper {
+    position: relative;
+    width: 83%;
+  }
+  body header nav #navegacion1 .input {
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #191919;
+    padding: 15px 2px 15px 10px;
+    width: 100%;
+    height: 2.7rem;
+  }
+  body header nav #navegacion1 .input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 92%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  body header nav #navegacion2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body header nav #navegacion2 #search {
+    background-image: url("/images/search.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+  }
+  body header nav #navegacion2 #bell {
+    background-image: url("/images/bell.svg");
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+  }
+  body header nav #navegacion2 #perfil #imagen {
+    border: 1px solid #c5c5c5;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--rw78308h--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/957623/0e3c3a82-6032-495f-8ee4-874d95885c14.png");
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
   }
 }
 main {
