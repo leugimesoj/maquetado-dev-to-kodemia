@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md d-flex justify-content-between">
+      <nav class="navbar navbar-expand-md d-flex justify-content-between ">
         <div id="navegacion1" class="d-flex justify-content-between">
           <button
             class="d-block d-md-none"
@@ -32,20 +32,26 @@
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
               alt="logo"
           /></a>
-          <input class="d-none d-md-block" type="text" />
+          <div class="input-wrapper d-none d-sm-none d-md-block">
+            <input type="search" class="input" placeholder="Search">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
         </div>
         <div id="navegacion2" class="d-flex">
           <a href="#" class="d-sm-blok d-md-none"> <div id="search"></div></a>
-          <button class="d-none d-md-block">create Post</button>
+          <button type="button" class="d-none d-md-block btn btn-outline-primary  " id="post">Create Post</button>
           <a href="#"><div id="bell"></div></a>
           <a id="perfil" href="#"> <div id="imagen"></div></a>
         </div>
       </nav>
 
-      <!--
-        <div
-
-      <div
+      
+  
+      
+           <div
 
         class="offcanvas offcanvas-start"
         tabindex="-1"
@@ -71,7 +77,7 @@
           <li><a href="#">📹 Vídeos</a></li>
           <li><a href="#">🏷️ Etiquetas</a></li>
           <li><a href="#">💡 Preguntas más frecuentes</a></li>
-          <li><a href="#">🛍️Tienda Forem</a></li>
+          <li><a href="#">🛍️ Tienda Forem</a></li>
           <li><a href="#">♥️ Patrocinadores</a></li>
           <li><a href="#">🏳️‍🌈 Sobre</a></li>
           <li><a href="#">🎺 Contacto</a></li>
@@ -88,8 +94,8 @@
           <li><a href="#">😎 Política de uso</a></li>
           <li><a href="#">👀 Términos de uso</a></li>
           <div
-            class="canvas-footer d-flex"
-            style="height: 30px; width: 30px; background-color: black"
+            class="ftr d-flex justify-content-around align-items-center"
+            
           >
             <div class="twitter"></div>
             <div class="facebook"></div>
@@ -99,14 +105,17 @@
           </div>
         </div>
       </div>
+      
+   
 
-      --> 
+      
     </header>
 
     <main class="px-5 py-3 w-100">
-      <aside>
+      
+      <aside >
         <div class="text-center w-100 d-none d-md-block">
-          <div class="row">
+          <div class="row d-flex">
             <div class="col-md-3">
               <div>
                 <ul class="my-3">
@@ -190,691 +199,14 @@
               <div class="my-4">
                 <div class="d-flex justify-content-between">
                   <p class="text-start fw-bold">My tags</p>
-
-    </header>
-
-    <main class="px-5 py-3 w-100">
-      <aside>
-        <div class="text-center w-100">
-          <div class="row">
-            <div class="col-md-3">
-              <div>
-                <ul class="my-3">
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">🏠 Home</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">📜 Listings</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">🎙️ Podcasts</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">📽️ Videos</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">🏷️ Tags</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">💡 FAQ</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">🛍️ Forem Shop</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">❤️ Sponsors</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">💻 About</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">📯 Contact</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">📖 Guides</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#"
-                      >🤔 Software comparisons</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <p class="text-start fw-bold">Other</p>
-
-                <ul class="my-3">
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#"
-                      >👍 Code of Conduct</a
-                    >
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">🤓 Privacy Policy</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">👀 Terms of use</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="d-flex justify-content-around my-5">
-                <a class="nav-link text-dark" href="#"
-                  ><img src="../images/bxl-twitter (2).svg" alt=""
-                /></a>
-                <a class="nav-link text-dark" href="#"
-                  ><img src="../images/bxl-twitch.svg" alt=""
-                /></a>
-                <a class="nav-link text-dark" href="#"
-                  ><img src="../images/bxl-facebook-square.svg" alt=""
-                /></a>
-                <a class="nav-link text-dark" href="#"
-                  ><img src="../images/bxl-github.svg" alt=""
-                /></a>
-                <a class="nav-link text-dark" href="#"
-                  ><img src="../images/bxl-instagram-alt.svg" alt=""
-                /></a>
-              </div>
-
-              <div class="my-4">
-                <div class="d-flex justify-content-between">
-                  <p class="text-start fw-bold">My tags</p>
-
-
-                  <li>
-                    <a class="nav-link text-dark" href="#"
-                      ><img src="../images/bx-cog.svg" alt="icono-tag"
-                    /></a>
-                  </li>
                 </div>
-
-                <ul class="my-3">
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#javascript</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#react</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#node</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#css</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#aws</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#html</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#github</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#api</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#database</a>
-                  </li>
-                  <li class="list-group-item text-start mb-2">
-                    <a class="nav-link text-dark" href="#">#php</a>
-                  </li>
-                </ul>
-
-              </div>
-
-              <div>
-                <div class="card">
-                  <img
-                    src="../images/wa.png"
-                    class="card-img-top"
-                    alt="imgwa"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-link fw-bold fs-6"
-                      >Immerse yourself in the WebAssembly ecosystem ✅</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="my-3">
-                <div class="card">
-                  <img
-                    src="../images/forem.png"
-                    class="card-img-top"
-                    alt="imgforem"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">The Forem Shop is Here!</h5>
-                    <a href="#" class="card-link fw-bold fs-6"
-                      >>> Shop Forem, DEV, and CodeNewbie merch</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">Column right</div>
-          </div>
-        </div>
-      </aside>
-
-      <section>
-        <div class="col-md-6">
-          Column Center
-
-          <div class="text-start">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-primary">Relevant</button>
-              <button type="button" class="btn btn-primary">Latest</button>
-              <button type="button" class="btn btn-primary">Top</button>
-            </div>
-          </div>
-
-          <div>
-            <div class="card">
-              <img
-                src="../images/cen_card.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div>
-                  <img src="../images/mac.webp" alt="img-entrada" />
-                </div>
-                <div>
-                  <a href="#" class="link-secondary">Simon MacDonald</a>
-                  <p>for</p>
-                  <a href="#" class="link-secondary"
-                    >Begin
-                    <span>Nov 18</span>
-                  </a>
-                </div>
-                <h5 class="card-title">Rendering Markdown with Enhance</h5>
-                <div class="">
-                  <a href="#" class="link-secondary">#webdev</a>
-                  <a href="#" class="link-secondary">#webcomponents</a>
-                  <a href="#" class="link-secondary">#enhance</a>
-                </div>
-                <div>
-                  <div>
-                    <a href="#" class="link-secondary">
-                      <img src="../images/bx-heart.svg" alt="heart-icon" />
-                      <span>1 reaction</span>
-                    </a>
-                    <a href="#" class="link-secondary">
-                      <img
-                        src="../images/bx-message-rounded.svg"
-                        alt="comment-icon"
-                      />
-                      <span>Add comment</span>
-                    </a>
-                  </div>
-                  <div>
-                    <p>5 min read</p>
-                    <a href="#" class="link-secondary">
-                      <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <aside></aside>
-
-              </div>
-
-              <div>
-                <div class="card">
-                  <img
-                    src="../images/wa.png"
-                    class="card-img-top"
-                    alt="imgwa"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-link fw-bold fs-6"
-                      >Immerse yourself in the WebAssembly ecosystem ✅</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="my-3">
-                <div class="card">
-                  <img
-                    src="../images/forem.png"
-                    class="card-img-top"
-                    alt="imgforem"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">The Forem Shop is Here!</h5>
-                    <a href="#" class="card-link fw-bold fs-6"
-                      >>> Shop Forem, DEV, and CodeNewbie merch</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">Column right</div>
-          </div>
-        </div>
-      </aside>
-
-      <section>
-        <div class="col-md-6">
-          Column Center
-
-          <div class="text-start">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-primary">Relevant</button>
-              <button type="button" class="btn btn-primary">Latest</button>
-              <button type="button" class="btn btn-primary">Top</button>
-            </div>
-          </div>
-
-          <div>
-            <div class="card">
-              <img
-                src="../images/cen_card.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div>
-                  <img src="../images/mac.webp" alt="img-entrada" />
-                </div>
-                <div>
-                  <a href="#" class="link-secondary">Simon MacDonald</a>
-                  <p>for</p>
-                  <a href="#" class="link-secondary"
-                    >Begin
-                    <span>Nov 18</span>
-                  </a>
-                </div>
-                <h5 class="card-title">Rendering Markdown with Enhance</h5>
-                <div class="">
-                  <a href="#" class="link-secondary">#webdev</a>
-                  <a href="#" class="link-secondary">#webcomponents</a>
-                  <a href="#" class="link-secondary">#enhance</a>
-                </div>
-                <div>
-                  <div>
-                    <a href="#" class="link-secondary">
-                      <img src="../images/bx-heart.svg" alt="heart-icon" />
-                      <span>1 reaction</span>
-                    </a>
-                    <a href="#" class="link-secondary">
-                      <img
-                        src="../images/bx-message-rounded.svg"
-                        alt="comment-icon"
-                      />
-                      <span>Add comment</span>
-                    </a>
-                  </div>
-                  <div>
-                    <p>5 min read</p>
-                    <a href="#" class="link-secondary">
-                      <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <aside d-none d-lg-block>
-        <div class="col--der">
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <img
-                src="https://res.cloudinary.com/practicaldev/image/fetch/s--5h37pDBt--/c_limit,f_auto,fl_progressive,q_auto,w_500/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k29d2yopcvvhbmg57tto.png"
-                class="card-img-top img-fluid"
-                alt="..."
-                style="width: 100%"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  MongoDb Atlas Hackaton <br />
-                  2022 (9)
-                </h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    MongoDb Atlas Hackaton 2022 on DEV
-                  </li>
-                  <li class="list-group-item">
-                    Introducing Odesey: Personal Journal
-                  </li>
-                  <li class="list-group-item">
-                    Introducing Owen Sauce - a new way to collaborate
-                  </li>
-                  <li class="list-group-item">
-                    Announcing the MongoDb Atlas Hackaton 2022 on DEV!
-                  </li>
-                  <li class="list-group-item">
-                    MongoDb Atlas Hackaton 2022 on DEV
-                  </li>
-                  <li class="list-group-item">
-                    <button type="button" class="btn btn-primary">
-                      Share your project
-                    </button>
-                  </li>
-                  <li class="list-group-item">
-                    <button type="button" class="btn btn-secondary">
-                      See all posts
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">Listings</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    🐻 Pizzly (the fast & simple OAuth library) is back - we
-                    need your input!
-                    <p class="card-text">collabs</p>
-                  </li>
-                  <li class="list-group-item">
-                    🔥 Learn Full-Stack JavaScript: Start from the basics of JS,
-                    HTML, CSS and progress to Node.js, React.js, React Native 🔥
-                    <p class="card-text">collabs</p>
-                  </li>
-                  <li class="list-group-item">
-                    Crypto Exchange Software For Sale
-                    <p class="card-text">education</p>
-                  </li>
-                  <li class="list-group-item">
-                    Refactor Like a Superhero: New Online Book! 🧑‍💻➡️🦸
-                    <p class="card-text">education</p>
-                  </li>
-                  <li class="list-group-item">
-                    MongoDb Atlas Hackaton 2022 on DEV
-                    <p class="card-text">collabs</p>
-                  </li>
-                  <li class="list-group-item">
-                    FREE eBook: Learn coding in 2023 - from zero to first Python
-                    program
-                    <p class="card-text">education</p>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="card-body">
-                      <a href="#" class="card-link">Create a Listing</a>
-                      <!-- text decoration none; centrar;  -->
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">#help</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Element type is invalid. Received a promise that resolves
-                    to: undefined. Lazy element type must resolve to a class or
-                    function.
-                    <p class="card-text">1 comment</p>
-                  </li>
-                  <li class="list-group-item">
-                    What the CRUD Active Record
-                    <p class="card-textcard--subtitulo"><span>New</span></p>
-                  </li>
-                  <li class="list-group-item">
-                    Can somebody help me with this problem? Consider
-                    ASAP...please...
-                    <p class="card-text">1 comment</p>
-                  </li>
-                  <!--  texto new en rojo y resaltado en amarillo -->
-                  <li class="list-group-item">
-                    Junior Developer
-                    <p class="card-text">1 comment</p>
-                  </li>
-                  <li class="list-group-item">
-                    Creating simple analytics dashboard for users
-                    <p class="card-textcard-text--subtitulo">
-                      <span>New</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">#discuss</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    This Week In Python
-                    <p class="card-text">1 comment</p>
-                  </li>
-                  <li class="list-group-item">
-                    What was your win this week?
-                    <p class="card-text">7 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Discussion: .NET MAUI vs Flutter vs React Native
-                    <p class="card-text">2 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Have you ever tired for making choices even after choosing
-                    framework?
-                    <p class="card-textcard--subtitulo"><span>New</span></p>
-                  </li>
-                  <li class="list-group-item">
-                    Property Management Areas Where Technology Can Help
-                    <p class="card-textcard--subtitulo"><span>New</span></p>
-                  </li>
-                  <!--  texto new en rojo y resaltado en amarillo -->
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">#explainlikeimfive</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Explain Blockchain like I am Five
-                    <p class="card-text">32 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Explain Redux like I'm five
-                    <p class="card-text">7 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Explain JSX like I'm five.
-                    <p class="card-text">27 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    How to add code highlighting to your Dev.to posts.
-                    <p class="card-text">33 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Explain MVC Like I'm Five
-                    <p class="card-text">3 comments</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">#challenge</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    NgRx Effect vs Reducer vs Selector
-                    <p class="card-textcard--subtitulo"><span>New</span></p>
-                  </li>
-                  <!--  texto new en rojo y resaltado en amarillo -->
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="width: 20.33rem">
-              <div class="card-body">
-                <h5 class="card-title">#meta</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    dev.to is for webdevs and beginners - I have data to prove
-                    it
-                    <p class="card-text">9 comments</p>
-                  </li>
-                  <li class="list-group-item">
-                    Follow Friday: NodeJS Edition (18 November 2022)
-                    <p class="card-textcard--subtitulo"><span>New</span></p>
-                  </li>
-                  <!--  texto new en rojo y resaltado en amarillo -->
-                </ul>
-              </div>
-            </div>
-            <div>
-              <div class="card" style="width: 20.33rem">
-                <div class="card-body">
-                  <h5 class="card-title">#watercooler</h5>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      Week one of CTO madness
-                      <p class="card-textcard--subtitulo"><span>New</span></p>
-                    </li>
-                    <li class="list-group-item">
-                      Writing Challenge: Conclusion
-                      <p class="card-textcard--subtitulo"><span>New</span></p>
-                    </li>
-                    <!--  texto new en rojo y resaltado en amarillo -->
-                    <li class="list-group-item">
-                      Meu "Hello World" em uma área totalmente diferente: Como
-                      fui parar em privacidade, proteção de dados e Governança
-                      da internet?
-                      <p class="card-textcard--subtitulo"><span>New</span></p>
-                    </li>
-                    <!--  texto new en rojo y resaltado en amarillo -->
-                    <li class="list-group-item">
-                      Day 07: My Vinyl Haul
-                      <p class="card-textcard--subtitulo"><span>New</span></p>
-                    </li>
-                    <!--  texto new en rojo y resaltado en amarillo -->
-                    <li class="list-group-item">
-                      Day 06: Writing about Writing
-                      <p class="card-textcard--subtitulo"><span>New</span></p>
-                    </li>
-                    <!--  texto new en rojo y resaltado en amarillo -->
-                  </ul>
-                </div>
-              </div>
-              <div style="width: 20.33rem">
-                <h6>trending guides/resources</h6>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    9 Docker Extensions Every Developer Must Try
-                  </li>
-                  <li class="list-group-item">
-                    5 websites to learn Frontend-web development faster
-                  </li>
-                  <li class="list-group-item">
-                    8 must-know tips for writing clean code with Javascript
-                  </li>
-                  <li class="list-group-item">
-                    I made 10x faster JSON.stringify() functions, even type safe
-                  </li>
-                  <li class="list-group-item">
-                    Design Patterns in Software Development
-                  </li>
-                  <li class="list-group-item">
-                    An animated guide for Node.js event loop
-                  </li>
-                  <li class="list-group-item">
-                    7 Shorthand Optimization Tricks every JavaScript Developer
-                    Should Know 😎
-                  </li>
-                  <li class="list-group-item">
-                    Creating a registration and a login with two-factor
-                    authentication on React 🤩
-                  </li>
-                  <li class="list-group-item">
-                    The 7 Best React Component Libraries to Use in 2022
-                  </li>
-                  <li class="list-group-item">
-                    Why We're Breaking Up with CSS-in-JS
-                  </li>
-                  <li class="list-group-item">
-                    Inversion of Control: Service Locator in Typescript
-                  </li>
-                  <li class="list-group-item">
-                    New git guidelines: We have switched to Conventional Commits
-                  </li>
-                  <li class="list-group-item">
-                    Building a chat app with Socket.io and React Native 🤯
-                  </li>
-                  <li class="list-group-item">
-                    Client-side Routing without the JavaScript
-                  </li>
-                  <li class="list-group-item">
-                    TypeScript 4.9: satisfies operator
-                  </li>
-                  <li class="list-group-item">
-                    I made a full-stack and type-safe personal site using the
-                    t3-stack (Next.js)!
-                  </li>
-                  <li class="list-group-item">
-                    Rust Easy! Modern Cross-platform Command Line Tools to
-                    Supercharge Your Terminal
-                  </li>
-                  <li class="list-group-item">
-                    React Just Got Even More Awesome
-                  </li>
-                  <li class="list-group-item">
-                    All your JavaScript code is polluted
-                  </li>
-                  <li class="list-group-item">Advice for Junior Developers</li>
-                </ul>
-              </div>
-              <div style="width: 20.33rem">
-                <h6>recently queried</h6>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Letsencrypt Wildcard</li>
-                  <li class="list-group-item">React Debounce</li>
-                  <li class="list-group-item">Supertest Jest</li>
-                  <li class="list-group-item">CSS Image Overlay</li>
-                  <li class="list-group-item">Laravel Docker</li>
-                  <li class="list-group-item">JavaScript Eval</li>
-                  <li class="list-group-item">PC Part Compatibility</li>
-                  <li class="list-group-item">CSS Id vs Class</li>
-                  <li class="list-group-item">Change Python Version Mac</li>
-                  <li class="list-group-item">Strikethrough Text Twitter</li>
-                  <li class="list-group-item">JavaScript Playground</li>
-                  <li class="list-group-item">Python Class Variables</li>
-                  <li class="list-group-item">Python Instantiate Class</li>
-                  <li class="list-group-item">Angular Hostlistener</li>
-                  <li class="list-group-item">Webpack Tutorial</li>
-                  <li class="list-group-item">gRPC vs REST</li>
-                  <li class="list-group-item">Python \N</li>
-                  <li class="list-group-item">Method vs Function</li>
-                  <li class="list-group-item">C++ &</li>
-                  <li class="list-group-item">Vscode Vim</li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
       </aside>
-
     </main>
+
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
