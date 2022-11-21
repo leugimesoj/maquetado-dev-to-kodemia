@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md d-flex justify-content-between ">
+      <nav class="navbar navbar-expand-md d-flex justify-content-between">
         <div id="navegacion1" class="d-flex justify-content-between">
           <button
             class="d-block d-md-none"
@@ -32,27 +32,16 @@
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
               alt="logo"
           /></a>
-          <div class="input-wrapper d-none d-sm-none d-md-block">
-            <input type="search" class="input" placeholder="Search">
-          
-            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-            </svg>
-          </div>
+          <input class="d-none d-md-block" type="text" />
         </div>
         <div id="navegacion2" class="d-flex">
           <a href="#" class="d-sm-blok d-md-none"> <div id="search"></div></a>
-          <button type="button" class="d-none d-md-block btn btn-outline-primary  " id="post">Create Post</button>
+          <button class="d-none d-md-block">create Post</button>
           <a href="#"><div id="bell"></div></a>
           <a id="perfil" href="#"> <div id="imagen"></div></a>
         </div>
       </nav>
-
-      
-  
-      
-           <div
-
+      <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
         id="offcanvasExample"
@@ -77,25 +66,21 @@
           <li><a href="#">📹 Vídeos</a></li>
           <li><a href="#">🏷️ Etiquetas</a></li>
           <li><a href="#">💡 Preguntas más frecuentes</a></li>
-          <li><a href="#">🛍️ Tienda Forem</a></li>
+          <li><a href="#">🛍️Tienda Forem</a></li>
           <li><a href="#">♥️ Patrocinadores</a></li>
           <li><a href="#">🏳️‍🌈 Sobre</a></li>
           <li><a href="#">🎺 Contacto</a></li>
           <li><a href="#">📖 Guías</a></li>
           <li><a href="#">🤔 Comparaciones de software</a></li>
-
-
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">
             <b>Otro</b>
           </h5>
-
-
           <li><a href="#">👍Codigo de conducta</a></li>
           <li><a href="#">😎 Política de uso</a></li>
           <li><a href="#">👀 Términos de uso</a></li>
           <div
-            class="ftr d-flex justify-content-around align-items-center"
-            
+            class="canvas-footer d-flex"
+            style="height: 30px; width: 30px; background-color: black"
           >
             <div class="twitter"></div>
             <div class="facebook"></div>
@@ -105,10 +90,6 @@
           </div>
         </div>
       </div>
-      
-   
-
-      
     </header>
 
 
@@ -117,7 +98,7 @@
           <div class="row">
             <aside class="col-md-3 main__asidei--width">
               <div>
-                <ul class="px-md-3 my-3">
+                <ul class="my-3">
                   <li class="list-group-item text-start mb-2">
                     <a class="nav-link text-dark" href="#">🏠 Home</a>
                   </li>
@@ -160,9 +141,9 @@
               </div>
 
               <div>
-                <p class="text-start fw-bold px-md-3">Other</p>
+                <p class="text-start fw-bold">Other</p>
 
-                <ul class="px-md-3 my-3">
+                <ul class="my-3">
                   <li class="list-group-item text-start mb-2">
                     <a class="nav-link text-dark" href="#"
                       >👍 Code of Conduct</a
@@ -195,10 +176,9 @@
                 /></a>
               </div>
 
-              <div class="my-4 asideizq__tags">
+              <div class="my-4">
                 <div class="d-flex justify-content-between">
-<<<<<<< HEAD
-                  <p class="text-start fw-bold px-md-3">My tags</p>
+                  <p class="text-start fw-bold">My tags</p>
 
                   <li>
                     <a class="nav-link text-dark" href="#"
@@ -207,7 +187,7 @@
                   </li>
                 </div>
 
-                <ul class="my-3 px-md-3">
+                <ul class="my-3">
                   <li class="list-group-item text-start mb-2">
                     <a class="nav-link text-dark" href="#">#javascript</a>
                   </li>
@@ -241,8 +221,8 @@
                 </ul>
               </div>
 
-              <div class="px-md-3">
-                <div class="card card__aside--1">
+              <div>
+                <div class="card">
                   <img
                     src="../images/wa.png"
                     class="card-img-top"
@@ -256,7 +236,7 @@
                 </div>
               </div>
 
-              <div class="my-3 card__aside--2 px-md-3">
+              <div class="my-3">
                 <div class="card">
                   <img
                     src="../images/forem.png"
@@ -271,585 +251,86 @@
                   </div>
                 </div>
               </div>
-            </aside>
+            </div>
 
-            <section class="col-md-6 section__center">
-              <div class="text-start">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary section__botton--group active">Relevant</button>
-                  <button type="button" class="btn btn-primary section__botton--group">Latest</button>
-                  <button type="button" class="btn btn-primary section__botton--group">Top</button>
+            <div class="col-md-3">Column right</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="width: 20.33rem">
+            <div class="card-body">
+              <h5 class="card-title">Listings </h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">🐻 Pizzly (the fast & simple OAuth library) is back - we need your input! <p class="card-text">collabs </p></li>
+                <li class="list-group-item">🔥 Learn Full-Stack JavaScript: Start from the basics of JS, HTML, CSS and progress to Node.js, React.js, React Native 🔥 <p class="card-text">collabs </p></li>
+                <li class="list-group-item">Crypto Exchange Software For Sale <p class="card-text">education </p></li>
+                <li class="list-group-item">Refactor Like a Superhero: New Online Book! 🧑‍💻➡️🦸<p class="card-text">education </p></li>
+                <li class="list-group-item">MongoDb Atlas Hackaton 2022 on DEV <p class="card-text">collabs </p></li>
+                <li class="list-group-item">FREE eBook: Learn coding in 2023 - from zero to first Python program<p class="card-text">education </p></li>
+                <li class="list-group-item"><div class="card-body">
+                  <a href="#" class="card-link">Create a Listing</a> 
+                  <!-- text decoration none; centrar;  -->
+                  
+                </div></li>
+                
+              </ul>
+            
+            </div>
+          </div>
+
+
+          <div>
+            <div class="card">
+              <img
+                src="../images/cen_card.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div>
+                  <img src="../images/mac.webp" alt="img-entrada" />
+                </div>
+                <div>
+                  <a href="#" class="link-secondary">Simon MacDonald</a>
+                  <p>for</p>
+                  <a href="#" class="link-secondary"
+                    >Begin
+                    <span>Nov 18</span>
+                  </a>
+                </div>
+                <h5 class="card-title">Rendering Markdown with Enhance</h5>
+                <div class="">
+                  <a href="#" class="link-secondary">#webdev</a>
+                  <a href="#" class="link-secondary">#webcomponents</a>
+                  <a href="#" class="link-secondary">#enhance</a>
+                </div>
+                <div>
+                  <div>
+                    <a href="#" class="link-secondary">
+                      <img src="../images/bx-heart.svg" alt="heart-icon" />
+                      <span>1 reaction</span>
+                    </a>
+                    <a href="#" class="link-secondary">
+                      <img
+                        src="../images/bx-message-rounded.svg"
+                        alt="comment-icon"
+                      />
+                      <span>Add comment</span>
+                    </a>
+                  </div>
+                  <div>
+                    <p>5 min read</p>
+                    <a href="#" class="link-secondary">
+                      <img src="../images/bx-bookmark.svg" alt="book-icon" />
+                    </a>
+                  </div>
                 </div>
               </div>
-    
-              <div class="py-2">
-                <div class="card">
-                  <img
-                    src="../images/cardimage2.webp"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/mac.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Simon MacDonald</a>
-                        <div>
-                          <p class="text-start">Nov 18 (4 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textTitulo">Find The Smallest Positive Integer Not Occurring In An Array - 3 Approaches</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#enhance</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>5 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <h5 class="card-title section__card--textSubtitulo">Implementing a feature with Vanilla JavaScript</h5>
-                    <div class="text-start my-2 section__card--textTags">
-                      <a href="#" class="">#javascript</a>
-                      <a href="#" class="">#webcomponents</a>
-                      <a href="#" class="">#webdev</a>
-                      <a href="#" class="">#begginers</a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="text-start mt-3 section__card--detalles">
-                        <a href="#" class="">
-                          <img src="../images/bx-heart.svg" alt="heart-icon" />
-                          <span>27 Reactions</span>
-                        </a>
-                        <a href="#" class="">
-                          <img
-                            src="../images/bx-message-rounded.svg"
-                            alt="comment-icon"
-                          />
-                          <span>61 Comments</span>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-end section__card--detallesEntrada">
-                        <p>3 min read</p>
-                        <a href="#" class="link-secondary">
-                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-2">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <div class="section__card--imgUsuario">
-                        <img src="../images/usr1.webp" alt="img-entrada" />
-                      </div>
-                      <div class="section__card--textUsuario">
-                        <a href="#" class="">Maxim Nosov</a>
-                        <div>
-                          <p class="text-start">Nov 20 (2 days ago)</p>
-                        </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
                       </div>
                     </div>
@@ -1534,17 +1015,22 @@
 
             
 
-
+=======
+                  <p class="text-start fw-bold">My tags</p>
+                </div>
+              </div>
+            </div>
+>>>>>>> origin
           </div>
         </div>
 
     </main>
 
     <footer></footer>
-      <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous">
-      </script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

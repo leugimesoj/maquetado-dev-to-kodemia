@@ -42,7 +42,8 @@
             flex-direction: column;
             justify-content: flex-start;
             list-style: none;
-            border: 1px opacity($color: gray) solid ;
+            border: 1px double transparent;
+
 
             p{
                 display: block;
