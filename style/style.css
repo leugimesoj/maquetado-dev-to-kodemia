@@ -333,4 +333,26 @@ aside .asideizq__tags {
     margin: 5px 0px 5px 0px;
   }
 }
+footer .container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer__img {
+  display: flex;
+  justify-content: center;
+}
+footer .container .footer__img img {
+  width: 20px;
+  height: 20px;
+}
+
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
