@@ -2,10 +2,14 @@
     .col--der{
     display: none;
     }
-    ul{
-     
+}
+@media screen and (min-width: 768px) {
+    .col--der--entrada{
+    margin-left: 50%;
     }
 }
+
+
 
 @media screen and (min-width: 1021px) {
     *{
@@ -26,7 +30,7 @@
         a{
             text-decoration: none;
             font-weight: bold;
-            color: black;
+            color: #0000FF;
         }
         h5{
             font: 20px;
@@ -62,8 +66,71 @@
         button{
             margin: 5px 0px 5px 0px;
         }
+        
+        .card-title--h5{
+            color: #242424;
+        }
+        .aside__background--top{
+            height: 1vh;
+        }
     
 
+    }
+    .col--der--entrada{
+        div{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .card-body{
+            padding: 0px;
+        }
+        
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #0000FF;
+        }
+        h5{
+            font: 20px;
+            color: #404040;
+            font-weight: bold;
+        }
+        ul{
+            width: 100%;
+        }
+        li{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+            border: 1px double transparent;
+            color: #404040;
+
+
+            p{
+                display: block;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: gray;
+            span{
+                background-color: yellow;
+                color: red;
+            }
+            
+        }
+        button{
+            margin: 5px 0px 5px 0px;
+        }
+        
+        .card-title--h5{
+            color: #242424;
+        }
+        .aside__background--top{
+            height: 1vh;
+        }
     }
     
     
