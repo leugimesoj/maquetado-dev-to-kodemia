@@ -10,6 +10,7 @@ header {
 
 @media only screen and (max-width: 810px) {
     nav {
+        
         @include tamaño(100%, 6vh);
         align-items: center;
 
@@ -148,9 +149,12 @@ header {
 @media only screen and (min-width: 810px) {
     body {
         header {
+            
+           
             nav {
-                @include tamaño(100%, 6vh);
+                @include tamaño(100%, 8vh);
                 align-items: center;
+                
 
                 #navegacion1 {
 
@@ -182,7 +186,7 @@ header {
                         border-radius: 4px;
                         color: #191919;
                         padding: 15px 2px 15px 10px;
-                        width: 100%;
+                        width: 80%;
                         height: 2.7rem;
                     }
                     .input-icon {
@@ -190,14 +194,14 @@ header {
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        left: 92%;
+                        left: 75%;
                         top: 50%;
                         transform: translateY(-50%);
                       }
                 }
 
                 #navegacion2 {
-                    @include tamaño(30%, 100%);
+                    @include tamaño(15%, 100%);
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -225,6 +229,8 @@ header {
                             height: 30px;
                         }
                     }
+
+                   
 
 
                 }
