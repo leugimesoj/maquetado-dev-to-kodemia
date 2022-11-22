@@ -376,6 +376,158 @@ aside .asideizq__tags {
   }
 }
 /*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 1080px) {
+  body main div div section .comments {
+    padding: 1vh;
+    background-color: white;
+    border-radius: 5px;
+  }
+  body main div div section .comments .comments__header {
+    margin-bottom: 2.5vh;
+  }
+  body main div div section .comments .comments__header .comments__titulo {
+    font-size: 1.25rem;
+  }
+  body main div div section .comments .comments__body .comments__body__nuevo--comentario .nuevo__comentario--input {
+    width: 92%;
+  }
+  body main div div section .comments .comments__body .comments__body__nuevo--comentario .nuevo__comentario--input .comentario__input {
+    border-radius: 5px;
+    height: 8vh;
+    width: 90%;
+    margin-bottom: 2.5vh;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 {
+    padding-left: 0.5rem;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario__imagen--perfil {
+    margin-right: 1.2rem;
+    margin-left: 0.2rem;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario {
+    width: 81%;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body {
+    width: 100%;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body .card-subtitle {
+    text-align: left;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body .card-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  body main div div section .comments .comments__body .comments__body__footer {
+    padding-left: 3rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border: 0;
+    background-color: white;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button span p {
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button:hover {
+    border: 1px white solid;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+  }
+  body main div div section .comments #imagen {
+    border: 1px solid #c5c5c5;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--rw78308h--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/957623/0e3c3a82-6032-495f-8ee4-874d95885c14.png");
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  body main div div section .comments {
+    padding: 1vh;
+    background-color: white;
+    border-radius: 5px;
+  }
+  body main div div section .comments .comments__header {
+    margin-bottom: 2.5vh;
+  }
+  body main div div section .comments .comments__header .comments__titulo {
+    font-size: 1.25rem;
+  }
+  body main div div section .comments .comments__body .comments__body__nuevo--comentario .nuevo__comentario--input {
+    width: 92%;
+  }
+  body main div div section .comments .comments__body .comments__body__nuevo--comentario .nuevo__comentario--input .comentario__input {
+    border-radius: 5px;
+    height: 8vh;
+    width: 90%;
+    margin-bottom: 2.5vh;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 {
+    padding-left: 0.5rem;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario__imagen--perfil {
+    margin-right: 2.6rem;
+    margin-left: 0.2rem;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario {
+    width: 81%;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body {
+    width: 100%;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body .card-subtitle {
+    text-align: left;
+  }
+  body main div div section .comments .comments__body .comments__body__comentario--100 .comments__body__comentario .card-body .card-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  body main div div section .comments .comments__body .comments__body__footer {
+    padding-left: 4rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border: 0;
+    background-color: white;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button span p {
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  body main div div section .comments .comments__body .comments__body__footer button:hover {
+    border: 1px white solid;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+  }
+  body main div div section .comments #imagen {
+    border: 1px solid #c5c5c5;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--rw78308h--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/957623/0e3c3a82-6032-495f-8ee4-874d95885c14.png");
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
 body {
   margin-top: 8.5vh;
 }/*# sourceMappingURL=style.css.map */
