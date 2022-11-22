@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md d-flex justify-content-between ">
+        <div id="navegacion1" class="d-flex justify-content-between">
+          <button
+            class="d-block d-md-none"
+            style="width: 50px; height: 50px"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="/images/list.svg" alt="menu" />
+          </button>
+          <a href="#"
+            ><img
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="logo"
+          /></a>
+          <div class="input-wrapper d-none d-sm-none d-md-block">
+            <input type="search" class="input" placeholder="Search">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+        <div id="navegacion2" class="d-flex">
+          <a href="#" class="d-sm-blok d-md-none"> <div id="search"></div></a>
+          <button type="button" class="d-none d-md-block btn btn-outline-primary  " id="post">Create Post</button>
+          <a href="#"><div id="bell"></div></a>
+          <a id="perfil" href="#"> <div id="imagen"></div></a>
+        </div>
+      </nav>
+
+      
+  
+      
+           <div
+
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+            <b>DEV Community 👩‍💻👨‍💻</b>
+          </h2>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <li><a href="#">🏠 Hogar</a></li>
+          <li><a href="#">🗃️ Leyendo lista</a></li>
+          <li><a href="#">📜 Listados</a></li>
+          <li><a href="#">🎙️ podcast</a></li>
+          <li><a href="#">📹 Vídeos</a></li>
+          <li><a href="#">🏷️ Etiquetas</a></li>
+          <li><a href="#">💡 Preguntas más frecuentes</a></li>
+          <li><a href="#">🛍️ Tienda Forem</a></li>
+          <li><a href="#">♥️ Patrocinadores</a></li>
+          <li><a href="#">🏳️‍🌈 Sobre</a></li>
+          <li><a href="#">🎺 Contacto</a></li>
+          <li><a href="#">📖 Guías</a></li>
+          <li><a href="#">🤔 Comparaciones de software</a></li>
+
+
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            <b>Otro</b>
+          </h5>
+
+
+          <li><a href="#">👍Codigo de conducta</a></li>
+          <li><a href="#">😎 Política de uso</a></li>
+          <li><a href="#">👀 Términos de uso</a></li>
+          <div
+            class="ftr d-flex justify-content-around align-items-center"
+            
+          >
+            <div class="twitter"></div>
+            <div class="facebook"></div>
+            <div class="github"></div>
+            <div class="instagram"></div>
+            <div class="twitch"></div>
+          </div>
+        </div>
+      </div>
+      
+   
+
+      
+    </header>
+
+
+    <main class="px-3 py-3 px-md-0 px-4 w-100 px-sm-0">
+        <div class=" text-center w-100">
+          <div class="row">
+            <aside class="col-md-4 col-lg-1 d-none d-md-block main__asidei--width">
+
+
+              <div class="d-flex flex-column align-items-end justify-content-around my-5 pe-2">
+                <a class="nav-link text-dark" href="#"
+                  ><img src="../images/bxl-twitter (2).svg" alt=""
+                /></a>
+                <p>15</p>
+                <a class="nav-link text-dark" href="#"
+                  ><img src="../images/bxl-twitch.svg" alt=""
+                /></a>
+                <p>15</p>
+                <a class="nav-link text-dark" href="#"
+                  ><img src="../images/bxl-facebook-square.svg" alt=""
+                /></a>
+                <p>15</p>
+
+              </div>
+
+            </aside>
+
+            <section class="col-md-8 col-lg-7 section__center">
+    
+              <div class="py-2 ">
+                <div class="card">
+                  <img
+                    src="../images/cardimage2.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="section__card--imgUsuario">
+                        <img src="../images/mac.webp" alt="img-entrada" />
+                      </div>
+                      <div class="section__card--textUsuario">
+                        <a href="#" class="">Simon MacDonald</a>
+                        <div>
+                          <p class="text-start">Nov 18 (4 days ago)</p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <h5 class="card-title section__card--textTitulo">Find The Smallest Positive Integer Not Occurring In An Array - 3 Approaches</h5>
+                    <div class="text-start my-2 section__card--textTags">
+                      <a href="#" class="">#webdev</a>
+                      <a href="#" class="">#webcomponents</a>
+                      <a href="#" class="">#enhance</a>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="text-start mt-3 section__card--detalles">
+                        <a href="#" class="">
+                          <img src="../images/bx-heart.svg" alt="heart-icon" />
+                          <span>27 Reactions</span>
+                        </a>
+                        <a href="#" class="">
+                          <img
+                            src="../images/bx-message-rounded.svg"
+                            alt="comment-icon"
+                          />
+                          <span>61 Comments</span>
+                        </a>
+                      </div>
+                      <div class="d-flex align-items-end section__card--detallesEntrada">
+                        <p>5 min read</p>
+                        <a href="#" class="link-secondary">
+                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="comments"> <!--Section Comments-->
+
+              </div>
+            </section>
+
+            <aside class="col-lg-4">
+              <div class="col--der pe-5">
+                    <div>
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5h37pDBt--/c_limit,f_auto,fl_progressive,q_auto,w_500/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k29d2yopcvvhbmg57tto.png" class="card-img-top img-fluid"
+                        alt="..."  style="width: 100%"/>
+                        <div class="card-body">
+                        
+                        <h5 class="card-title">MongoDb Atlas Hackaton <br>
+                            2022 (9)</h5>
+            
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">MongoDb Atlas Hackaton 2022 on DEV</li>
+                            <li class="list-group-item">Introducing Odesey: Personal Journal </li>
+                            <li class="list-group-item">Introducing Owen Sauce - a new way to collaborate</li>
+                            <li class="list-group-item">Announcing the MongoDb Atlas Hackaton 2022 on DEV!</li>
+                            <li class="list-group-item">MongoDb Atlas  Hackaton 2022 on DEV</li>
+                            <li class="list-group-item"><button type="button" class="btn btn-primary">Share your project</button></li>
+                            <li class="list-group-item"><button type="button" class="btn btn-secondary">See all posts</button></li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    </div>
+            
+                    <div>
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Listings </h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🐻 Pizzly (the fast & simple OAuth library) is back - we need your input! <p class="card-text">collabs </p></li>
+                            <li class="list-group-item">🔥 Learn Full-Stack JavaScript: Start from the basics of JS, HTML, CSS and progress to Node.js, React.js, React Native 🔥 <p class="card-text">collabs </p></li>
+                            <li class="list-group-item">Crypto Exchange Software For Sale <p class="card-text">education </p></li>
+                            <li class="list-group-item">Refactor Like a Superhero: New Online Book! 🧑‍💻➡️🦸<p class="card-text">education </p></li>
+                            <li class="list-group-item">MongoDb Atlas Hackaton 2022 on DEV <p class="card-text">collabs </p></li>
+                            <li class="list-group-item">FREE eBook: Learn coding in 2023 - from zero to first Python program<p class="card-text">education </p></li>
+                            <li class="list-group-item"><div class="card-body">
+                            <a href="#" class="card-link">Create a Listing</a> 
+                            
+                            </div></li>
+                            
+                        </ul>
+                        
+                        </div>
+                        
+                    </div>
+                    </div>
+              </div>     
+            </aside>
+
+
+          </div>
+        </div>
+
+    </main>
+
+
+    <footer class="text-center"> 
+        <div class=" p-4 pb-0" style="background-color: #e5e5e5;"> 
+            <section class=""> 
+                <p class="d-flex justify-content-center align-items-center"> <span class="me-3"><a href="https://dev.to/">Dev Community </a> 👩‍💻👨‍💻- A constructive and inclusive social network for software developers. With you every step of the journey.</span></p>
+
+                <p class="d-flex justify-content-center align-items-center"><span class="me-3">Built on <a href="https://www.forem.com/">Forem</a> - the <a href="https://dev.to/t/opensource">open software</a> that powers <a href="#">DEV</a> and other inclusive communities.</span></p>
+
+                <p class="d-flex justify-content-center align-items-center"><span class="me-3">Made with love and <a href="https://dev.to/t/rails">Ruby on Rails </a>. DEV Community 👩‍💻👨‍💻 © 2016 - 2022</span></p>
+
+                <img src="https://cdn5.vectorstock.com/i/1000x1000/11/04/green-leaf-logo-design-template-modern-leaf-logo-vector-26551104.jpg" alt="" > 
+            </section> 
+        </div>
+    </footer>
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous">
+      </script>
+  </body>
+</html>
