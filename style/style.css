@@ -348,56 +348,6 @@ aside .asideizq__tags {
   .col--der .aside__background--top {
     height: 1vh;
   }
-  .col--der--entrada div {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .col--der--entrada .card-body {
-    padding: 0px;
-  }
-  .col--der--entrada a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #0000FF;
-  }
-  .col--der--entrada h5 {
-    font: 20px;
-    color: #404040;
-    font-weight: bold;
-  }
-  .col--der--entrada ul {
-    width: 100%;
-  }
-  .col--der--entrada li {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    list-style: none;
-    border: 1px double transparent;
-    color: #404040;
-  }
-  .col--der--entrada li p {
-    display: block;
-  }
-  .col--der--entrada p {
-    font-size: 14px;
-    color: gray;
-  }
-  .col--der--entrada p span {
-    background-color: yellow;
-    color: red;
-  }
-  .col--der--entrada button {
-    margin: 5px 0px 5px 0px;
-  }
-  .col--der--entrada .card-title--h5 {
-    color: #242424;
-  }
-  .col--der--entrada .aside__background--top {
-    height: 4vh;
-    border-radius: 7px 7px 0 0;
-  }
 }
 @media screen and (max-width: 425px) {
   footer {
