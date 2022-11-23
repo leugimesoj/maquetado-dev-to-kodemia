@@ -77,6 +77,10 @@
 
     }
     .col--der--entrada{
+        *{
+            padding: 0;
+            margin: 0;
+        }
         div{
             width: 100%;
             margin-bottom: 15px;
