@@ -2,6 +2,11 @@
 @import '_aside-izquierdo.scss';
 @import '_main.scss';
 @import '_aside-derecho.scss';
-@import '_footer.scss'; /*# sourceMappingURL=style.css.map */
+@import '_footer.scss';
+/*# sourceMappingURL=style.css.map */
+@import '_comentario.scss';
+@import '_entrada-asideIzq.scss';
 
-
+body {
+    margin-top: 8.5vh;
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-md d-flex justify-content-between ">
+        <div id="navegacion1" class="d-flex justify-content-between">
+          <button
+            class="d-block d-md-none"
+            style="width: 50px; height: 50px"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="/images/list.svg" alt="menu" />
+          </button>
+          <a href="#"
+            ><img
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="logo"
+          /></a>
+          <div class="input-wrapper d-none d-sm-none d-md-block">
+            <input type="search" class="input" placeholder="Search">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+        <div id="navegacion2" class="d-flex">
+          <a href="#" class="d-sm-blok d-md-none"> <div id="search"></div></a>
+          <button type="button" class="d-none d-md-block btn btn-outline-primary  " id="post">Create Post</button>
+          <a href="#"><div id="bell"></div></a>
+          <a id="perfil" href="#"> <div id="imagen"></div></a>
+        </div>
+      </nav>
+
+      
+  
+      
+           <div
+
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+            <b>DEV Community 👩‍💻👨‍💻</b>
+          </h2>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <li><a href="#">🏠 Hogar</a></li>
+          <li><a href="#">🗃️ Leyendo lista</a></li>
+          <li><a href="#">📜 Listados</a></li>
+          <li><a href="#">🎙️ podcast</a></li>
+          <li><a href="#">📹 Vídeos</a></li>
+          <li><a href="#">🏷️ Etiquetas</a></li>
+          <li><a href="#">💡 Preguntas más frecuentes</a></li>
+          <li><a href="#">🛍️ Tienda Forem</a></li>
+          <li><a href="#">♥️ Patrocinadores</a></li>
+          <li><a href="#">🏳️‍🌈 Sobre</a></li>
+          <li><a href="#">🎺 Contacto</a></li>
+          <li><a href="#">📖 Guías</a></li>
+          <li><a href="#">🤔 Comparaciones de software</a></li>
+
+
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            <b>Otro</b>
+          </h5>
+
+
+          <li><a href="#">👍Codigo de conducta</a></li>
+          <li><a href="#">😎 Política de uso</a></li>
+          <li><a href="#">👀 Términos de uso</a></li>
+          <div
+            class="ftr d-flex justify-content-around align-items-center"
+            
+          >
+            <div class="twitter"></div>
+            <div class="facebook"></div>
+            <div class="github"></div>
+            <div class="instagram"></div>
+            <div class="twitch"></div>
+          </div>
+        </div>
+      </div>
+      
+   
+
+      
+    </header>
+
+
+    <main class="px-3 py-3 px-md-0 px-4 w-100 px-sm-0">
+        <div class=" text-center w-100">
+          <div class="row">
+            <aside class="col-md-2 col-lg-1 d-none d-md-block">
+
+              <div class="mx-md-3 my-md-4  mx-5 my-5">
+
+                <div class="aside-fijo">
+                  <div class="">
+                    <a class="nav-link text-dark" href="#">
+                      <img src="../images/bx-heart.svg" alt=""/>
+                    </a>
+                  </div>
+  
+                  <div class="ms-2">
+                    <p>4</p>
+                  </div>
+                  <div>
+                    <a class="nav-link text-dark" href="#"
+                    ><img src="../images/bx-message-rounded.svg" alt=""
+                  /></a>
+                  </div>
+                  
+                  <div>
+                    <p class="ms-2">1</p>
+                  </div>
+                  
+                  <div>
+                    <a class="nav-link text-dark" href="#"
+                    ><img src="../images/bx-bookmark.svg" alt=""
+                  /></a>
+                  </div>
+                  <div>
+                    <p class="ms-1">12</p>
+                  </div>
+  
+                  <div class="">
+                    <div class="btn-group dropend rounded-circle entrada__boton--aside">
+                      <img src="../images/bx-dots-horizontal-rounded.svg" type="button" class="btn rounded-circle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      </img>
+                      <ul class="dropdown-menu menu__width--aside">
+                        <li><a class="dropdown-item activeItemMenu" aria-current="true" href="#">Copy link
+                          <div class="contenedor__icono--item"><img src="../images/bxs-copy-alt.svg" alt="copy-icon"></div>
+                        </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Share to Twitter</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Linkedln</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Reddit</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Hacker News</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Facebook</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </aside>
+
+            <section class="col-md-10 col-lg-7 entrada__section--center">
+    
+              <div class="py-0">
+                <div class="card">
+                  <img
+                    src="../images/cardimage2.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-lg-5 px-md-4 px-sm-1">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="entrada__card--imgUsuario">
+                        <img src="../images/mac.webp" alt="img-entrada" />
+                      </div>
+                      <div class="entrada__card--textUsuario text-start mt-4">
+                        <a href="#" class="">Simon MacDonald</a>
+                        <div>
+                          <p class="text-start">Posted on 18 Nov • Originally published at 
+                            <a class="link-primary" href="https://surajondev.com/2022/11/21/awesome-websites-for-ui-components/">surajondev.com</a></p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <h5 class="card-title entrada__card--textTitulo">Awesome Websites for UI Components</h5>
+                    <div class="text-start my-2 entrada__card--textTags">
+                      <a href="#" class="">#webdev</a>
+                      <a href="#" class="">#webcomponents</a>
+                      <a href="#" class="">#enhance</a>
+                    </div>
+                    <div class="d-flex justify-content-between section__reactions">
+                      <div class="text-start mt-3 section__card--detalles">
+                        <a href="#" class="">
+                          <img src="../images/bx-heart.svg" alt="heart-icon" />
+                          <span>27 Reactions</span>
+                        </a>
+                        <a href="#" class="">
+                          <img
+                            src="../images/bx-message-rounded.svg"
+                            alt="comment-icon"
+                          />
+                          <span>61 Comments</span>
+                        </a>
+                      </div>
+                      <div class="d-flex align-items-end section__card--detallesEntrada">
+                        <p>5 min read</p>
+                        <a href="#" class="link-secondary">
+                          <img src="../images/bx-bookmark.svg" alt="book-icon" />
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="my-5">
+                      <div class="list-group entrada__list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                          Awesome Websites for UI Components
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Awesome tools for Web Developer - Part 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Awesome tools for Web Developer - Part 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">50+ Awesome tools for Web Developers</a>
+                        <a class="list-group-item list-group-item-action">Free Awesome Notion Templates for Developers</a>
+                      </div>
+
+                      <div class="my-5">
+                        <h3 class="text-start fs-2 fw-bold my-3">Introduction</h3>
+                        <p class="text-start fs-5">UI plays an important role in terms of providing visuals to your website. A modern good looking UI attracts people. UI is the first thing that a user is going to see. So, a good UI becomes necessary.</p>
+
+                        <p class="text-start fs-5">A UI is made up of different components. Today, we are going to look into some websites from where you can get beautiful UI Components. This list of the website is from my ebook/notion template, <a href="#">50+ Awesome tools for Web Developers.</a>  You can check it.</p>
+                          
+                        <p class="text-start fs-5">Let's get started with the list.</p>
+
+                        <div>
+                          <h3 class="text-start fs-2 fw-bold my-3"><a href="https://www.flaticon.com/">Flaticon</a></h3>
+                          <p class="text-start fs-5 entrada__content--borde">Download Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD, and CSS formats</p>
+                        </div>
+                        <div class="entrada__content--img mb-3">
+                          <img src="../images/entrada-flat.png" alt="imagen-flaticon">
+                        </div>
+                        <p class="text-start fs-5">FlatIcon has a huge library of icons that you can use in your design and build a web page. They have over 8 Million vectors and stickers. I do use their platform to get some icons for the web pages. They have a variety of icons in different sizes. Icons are available in SVG, PSD, PNG, and EPS formats.</p>
+                        <hr class="entrada__content--borderBottom"></hr>
+
+                        <div>
+                          <h3 class="text-start fs-2 fw-bold my-3"><a href="https://blush.design/es">Blush Design</a></h3>
+                          <p class="text-start fs-5 entrada__content--borde">Blush makes it easy to add free illustrations to your designs. Play with fully customizable graphics made by artists across the globe.</p>
+                        </div>
+                        <div class="entrada__content--img mb-3">
+                          <img src="../images/entrada-blush.png" alt="imagen-blush">
+                        </div>
+                        <p class="text-start fs-5">You can create customized illustrations from unDraw. You don’t have to draw an illustration from scratch they already have elements and you can assemble them to make an awesome illustration. They also have pre-created illustrations that you can customize or directly download for your design and web pages. I like to get humans kind of illustrations from the website to create landing pages for my website.</p>
+                        <hr class="entrada__content--borderBottom"></hr>
+
+                        <div>
+                          <h3 class="text-start fs-2 fw-bold my-3"><a href="https://colorhunt.co/">ColorHunt</a></h3>
+                          <p class="text-start fs-5 entrada__content--borde">Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art projects.</p>
+                        </div>
+                        <div class="entrada__content--img mb-3">
+                          <img src="../images/entrada-color.png" alt="imagen-colorhhunt">
+                        </div>
+                        <p class="text-start fs-5">Tons of color pallets to use in your design. You can get a lot of inspiration and color pallet to use in your next design. I regularly visit the website to get popular and trendy color pallets. Along with using in design, I also used the color pallets in creating thumbnails for my articles.</p>
+                        <hr class="entrada__content--borderBottom"></hr>
+
+                        <div>
+                          <h3 class="text-start fs-2 fw-bold my-3"><a href="https://fonts.google.com/">Google Fonts</a></h3>
+                          <p class="text-start fs-5 entrada__content--borde">Making the web more beautiful, fast, and open through great typography</p>
+                        </div>
+                        <div class="entrada__content--img mb-3">
+                          <img src="../images/entrada-fonts.png" alt="imagen-google-fonts">
+                        </div>
+                        <p class="text-start fs-5">One of the best websites to integrate awesome fonts into your website. Google font is easy to install with link and import. It is an open-source font library of more than 1,400 fonts. I have recently started using it to add better fonts to my web pages. In addition to fonts, it also has a huge collection of icons.</p>
+                        <hr class="entrada__content--borderBottom"></hr>
+
+                        <div>
+                          <h3 class="text-start fs-2 fw-bold my-3"><a href="https://error404.fun/">Error 404</a></h3>
+                          <p class="text-start fs-5 entrada__content--borde">Make a unique journey through 404 error pages on your website Use these illustrations that describe better than words</p>
+                        </div>
+                        <div class="entrada__content--img mb-3">
+                          <img src="../images/entrada404.png" alt="imagen-error404">
+                        </div>
+                        <p class="text-start fs-5">It’s a fun web page to explore for 404-page error page illustrations. It has a lot of free illustrations related to a 404(Not found) error page. You can download and use it in your designs and web pages. There are also examples, you can look into for inspiration.</p>
+                        
+                        <h3 class="text-start fs-2 fw-bold my-3">Conect With Me</h3>
+                        <ul class="text-start fs-5 mb-3">
+                          <li><a href="https://twitter.com/">Twitter</a></li>
+                          <li><a href="https://www.linkedin.com/">Linkedln</a></li>
+                        </ul>
+                        <h3 class="text-start fs-2 fw-bold my-3">Conclusion</h3>
+                        <p class="text-start fs-5">I hope this article has helped you in knowing some awesome websites for UI components. Feel free to mention any other tool/website in the comment, might add it in the upcoming part.</p>
+                        <p class="text-start fs-5">You can check the <a href="#">50+ Awesome tools for Web Developers</a> if you are interested in such a tool.</p>
+                        <p class="text-start fs-5">Thanks for reading the blog post.</p>
+
+                        <div class="list-group entrada__list-group">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            Awesome Websites for UI Components
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">Awesome tools for Web Developer - Part 1</a>
+                          <a href="#" class="list-group-item list-group-item-action">Awesome tools for Web Developer - Part 2</a>
+                          <a href="#" class="list-group-item list-group-item-action">50+ Awesome tools for Web Developers</a>
+                          <a class="list-group-item list-group-item-action">Free Awesome Notion Templates for Developers</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class=" container comments"> <!--Section Comments-->
+                <div class="comments__header d-flex justify-content-between">
+                  <b><h2 class="comments__titulo">Top comments (5)</h2></b>
+                  <button class="btn btn-outline-secondary">Subscribe</button>
+                </div>
+                <div class="comments__body ">
+                  <div class="row-12 comments__body__nuevo--comentario d-flex">
+                    <div class="nuevo__comentario__imagen--perfil col-3" id="imagen"></div>
+                    <div class="nuevo__comentario--input col-9">
+                      <input type="text" placeholder="Add to the discussion" class="comentario__input">
+                    </div>
+                  </div>
+                  <div class="row comments__body__comentario--100 d-flex">
+                    <div class="comments__body__comentario__imagen--perfil " id="imagen"></div>
+                    <div class="comments__body__comentario card col-9">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2  text-muted">Private Messages  21 nov</h6>
+                        <p class="card-text">What is the easiest way to integrate Google Search Console with Google Analitys 4?</p>
+                      </div>   
+                    </div>
+                  </div>
+                  <div class="comments__body__footer d-flex justify-content-start">
+                    <div class="coments__footer__icon d-flex">
+                        <button>
+                          <span class="d-flex ">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="afn7x1014sww5833kxqg5kiu5793ynjr" class="crayons-icon reaction-icon not-reacted "><title id="afn7x1014sww5833kxqg5kiu5793ynjr">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                            <p>7</p>
+                          </span>
+                        </button>
+                        
+                    </div>   
+                    <div class="coments__footer__icon d-flex">
+                      <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ale1wcowz6js3zw13abgcgvdupg0ibn3" class="crayons-icon reaction-icon not-reacted"><title id="ale1wcowz6js3zw13abgcgvdupg0ibn3">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                      </button>
+                      <p></p>
+                   </div> 
+                                    
+                </div>
+                <div class="row comments__body__comentario--100 d-flex">
+                  <div class="comments__body__comentario__imagen--perfil col-3" id="imagen"></div>
+                  <div class="comments__body__comentario card col-9">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2  text-muted">Private Messages  21 nov</h6>
+                      <p class="card-text">What is the easiest way to integrate Google Search Console with Google Analitys 4?</p>
+                    </div>   
+                  </div>
+                </div>
+                <div class="comments__body__footer d-flex justify-content-start">
+                  <div class="coments__footer__icon d-flex">
+                      <button>
+                        <span class="d-flex ">
+                          <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="afn7x1014sww5833kxqg5kiu5793ynjr" class="crayons-icon reaction-icon not-reacted "><title id="afn7x1014sww5833kxqg5kiu5793ynjr">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                          <p>7</p>
+                        </span>
+                      </button>
+                      
+                  </div>   
+                  <div class="coments__footer__icon d-flex">
+                    <button>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ale1wcowz6js3zw13abgcgvdupg0ibn3" class="crayons-icon reaction-icon not-reacted"><title id="ale1wcowz6js3zw13abgcgvdupg0ibn3">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                    </button>
+                    <p></p>
+                 </div> 
+                                  
+              </div>
+              <div class="row comments__body__comentario--100 d-flex">
+                <div class="comments__body__comentario__imagen--perfil col-3" id="imagen"></div>
+                <div class="comments__body__comentario card col-9">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2  text-muted">Private Messages  21 nov</h6>
+                    <p class="card-text">What is the easiest way to integrate Google Search Console with Google Analitys 4?</p>
+                  </div>   
+                </div>
+              </div>
+              <div class="comments__body__footer d-flex justify-content-start">
+                <div class="coments__footer__icon d-flex">
+                    <button>
+                      <span class="d-flex ">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="afn7x1014sww5833kxqg5kiu5793ynjr" class="crayons-icon reaction-icon not-reacted "><title id="afn7x1014sww5833kxqg5kiu5793ynjr">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                        <p>7</p>
+                      </span>
+                    </button>
+                    
+                </div>   
+                <div class="coments__footer__icon d-flex">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ale1wcowz6js3zw13abgcgvdupg0ibn3" class="crayons-icon reaction-icon not-reacted"><title id="ale1wcowz6js3zw13abgcgvdupg0ibn3">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                  </button>
+                  <p></p>
+               </div> 
+                                
+            </div>
+
+                  
+                  <div class="comments__footer d-flex flex-row justify-content-center">
+                    <a href="#" style="text-decoration: none;"><p style="color: grey;"> Code of conduct</p></a>
+                    <div style="width: 20px; color: grey;">●</div>
+                    <a href="#" style="text-decoration: none;"><p style="color: grey;">Reporte abuse</p></a>
+
+                  </div>
+
+                
+              </div>
+              </div>
+            </section>
+
+            <aside class="col-lg-4 col-md-8 entrada__aside--centrar">
+              <div class="col--der--entrada">
+                
+                  
+    
+                  <div class="" >
+                    <div class="card" >
+                      <img class="aside__background--top" src="https://wallpapercave.com/wp/wp2801665.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="d-flex flex-start">
+                          <img class="rounded-circle shadow-1-strong me-3"
+                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--GJ8ffx8t--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/825313/3bb6b01f-64ad-4957-8910-587776e2e1e2.jpeg" alt="avatar" width="65"
+                            height="65" />
+                            <h5><a href="https://dev.to/gloriamaldonado" class="">Gloria Maldonado ✪</a></h5>
+    
+                          </div>
+                        </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary" style="width: 90%;">Follow</button>
+                      </div>
+                        <div >
+                        
+                        <p class="card-text">Howdy, I’m Gloria. I’m a web developer living in United States. I am a fan of
+                          shop, data, and technology. I’m also interested in analytics and commerce.</p>
+                        
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-start flex-column">LOCATION<p class="card-text">
+                                NY, United States </p>
+                            <li class="list-group-item d-flex align-items-start flex-column">EDUCATION<p class="card-text">
+                                International Business, University of Florida</p>
+                            </li>
+        
+                            <li class="list-group-item d-flex align-items-start flex-column">WORK<p class="card-text">
+                                Analyzify </p>
+                            </li>
+                            <li class="list-group-item d-flex align-items-start flex-column">JOINED<p class="card-text">
+                                4 mar 2022 </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div>
+                    <div class="card">
+    
+                      <div class="card-body">
+    
+    
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <h5 class="card-title--h5">More from <a href="">Gloria Maldonado ✪</a> </h5>
+                          </li>
+                          <li class="list-group-item">Universal Analytics vs. Google Analytics 4 Explained for Shopify
+                            Merchants<p class="card-textcard">
+                              #webdev #googleanalytics #shopify #ga4
+                            </p>
+                          </li>
+                          <li class="list-group-item">Top 5 Google Ads Extensions for Shopify Stores<p class="card-text">
+                              #webdev #shopify #googleads #extension </p>
+                          </li><!--  texto new en rojo y resaltado en amarillo -->
+                          <li class="list-group-item">A Complete Guide to Importing Shopify Customer Data to Google Ads<p
+                              class="card-text">#webdev #shopify #googleads #datascience </p>
+                          </li>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+            </aside>
+
+
+          </div>
+        </div>
+
+    </main>
+
+
+    <footer class="text-center"> 
+        <div class=" p-4 pb-0" style="background-color: #e5e5e5;"> 
+            <section class=""> 
+                <p class="d-flex justify-content-center align-items-center"> <span class="me-3"><a href="https://dev.to/">Dev Community </a> 👩‍💻👨‍💻- A constructive and inclusive social network for software developers. With you every step of the journey.</span></p>
+
+                <p class="d-flex justify-content-center align-items-center"><span class="me-3">Built on <a href="https://www.forem.com/">Forem</a> - the <a href="https://dev.to/t/opensource">open software</a> that powers <a href="#">DEV</a> and other inclusive communities.</span></p>
+
+                <p class="d-flex justify-content-center align-items-center"><span class="me-3">Made with love and <a href="https://dev.to/t/rails">Ruby on Rails </a>. DEV Community 👩‍💻👨‍💻 © 2016 - 2022</span></p>
+
+                <img src="https://cdn5.vectorstock.com/i/1000x1000/11/04/green-leaf-logo-design-template-modern-leaf-logo-vector-26551104.jpg" alt="" > 
+            </section> 
+        </div>
+    </footer>
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous">
+      </script>
+  </body>
+</html>
